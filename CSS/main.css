@@ -16,21 +16,25 @@ img {
 body {
   background-color: aliceblue;
   font-size: 1rem;
+  display: grid;
 }
+
 .form-container {
   display: grid;
-  /* place-content: center; */
-  grid-template-rows: repeat(7, auto);
+  grid-template-rows: repeat(7, 1fr);
   row-gap: 15px;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
 }
 .form-container select {
   place-self: center;
+  outline: transparent;
+  border: none;
+  background-color: transparent;
 }
 .form-container img {
   place-self: center;
-  height: 200px;
-  width: 200px;
+  height: 50px;
+  width: 50px;
 }
 .form-container input {
   font-size: 1rem;
