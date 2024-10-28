@@ -1,0 +1,15 @@
+/* || CSS RESET */
+*,
+*::before,
+*::after {
+  outline: 2px solid blue;
+  background-color: hsla(0, 100%, 50%, 0.1);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+img {
+  display: block;
+}
