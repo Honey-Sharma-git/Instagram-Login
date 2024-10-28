@@ -2,14 +2,61 @@
 *,
 *::before,
 *::after {
-  outline: 2px solid blue;
-  background-color: hsla(0, 100%, 50%, 0.1);
+  box-sizing: border-box;
+  /* outline: 2px solid blue; */
+  /* background-color: hsla(0, 100%, 50%, 0.1); */
 }
 * {
   margin: 0;
   padding: 0;
-  box-sizing: 0;
 }
 img {
   display: block;
+}
+body {
+  background-color: aliceblue;
+  font-size: 1rem;
+}
+.form-container {
+  display: grid;
+  /* place-content: center; */
+  grid-template-rows: repeat(7, auto);
+  row-gap: 15px;
+  padding: 1rem 2rem;
+}
+.form-container select {
+  place-self: center;
+}
+.form-container img {
+  place-self: center;
+  height: 200px;
+  width: 200px;
+}
+.form-container input {
+  font-size: 1rem;
+  outline: transparent;
+  border: 0.5px solid gray;
+  border-radius: 10px;
+  background-color: white;
+  padding: 1rem;
+}
+.form-container button {
+  padding: 1rem;
+  font-size: 1rem;
+  outline: transparent;
+  border: none;
+  border-radius: 50px;
+  background-color: royalblue;
+  color: white;
+}
+.form-container a,
+:is(:visited, focus) {
+  place-self: center;
+  color: black;
+  text-decoration: none;
+}
+.form-container .new-account-btn {
+  color: royalblue;
+  background-color: transparent;
+  border: 1px solid royalblue;
 }
