@@ -47,7 +47,6 @@ input {
   border: 0.1px solid gray;
   border-radius: 10px;
   font-weight: 450;
-  outline: transparent;
 }
 .login-btn {
   min-width: 350px;
