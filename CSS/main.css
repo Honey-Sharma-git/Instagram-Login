@@ -2,65 +2,70 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  /* outline: 2px solid blue; */
-  /* background-color: hsla(0, 100%, 50%, 0.1); */
+  /* outline: 2px solid blue;
+  background-color: hsla(0, 100%, 50%, 0.1); */
 }
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 img {
   display: block;
 }
-body {
-  background-color: aliceblue;
-  font-size: 1rem;
-  display: grid;
-}
-
 .form-container {
+  padding: 0.5rem 1rem;
+  height: 100vh;
+  background-color: aliceblue;
   display: grid;
-  grid-template-rows: repeat(7, 1fr);
-  row-gap: 15px;
-  padding: 1rem 1rem;
+  place-content: center;
+  place-items: center;
+  grid-template-rows: auto 1fr auto 1fr;
 }
-.form-container select {
-  place-self: center;
-  outline: transparent;
+select {
   border: none;
   background-color: transparent;
-}
-.form-container img {
-  place-self: center;
-  height: 50px;
-  width: 50px;
-}
-.form-container input {
   font-size: 1rem;
-  outline: transparent;
-  border: 0.5px solid gray;
+}
+select:after ::marker {
+  content: none;
+}
+.input-container {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto;
+  row-gap: 10px;
+}
+input {
+  padding: 1rem;
+  font-size: 1rem;
+  border: 0.5px solid black;
   border-radius: 10px;
-  background-color: white;
-  padding: 1rem;
 }
-.form-container button {
+.login-btn {
+  min-width: 350px;
   padding: 1rem;
   font-size: 1rem;
-  outline: transparent;
-  border: none;
-  border-radius: 50px;
   background-color: royalblue;
   color: white;
+  border: none;
+  border-radius: 40px;
 }
-.form-container a,
-:is(:visited, focus) {
-  place-self: center;
-  color: black;
+.forgot-password {
+  justify-self: center;
   text-decoration: none;
+  color: black;
 }
-.form-container .new-account-btn {
-  color: royalblue;
+.create-new {
+  align-self: end;
+}
+.new-account-btn {
+  min-width: 350px;
+  padding: 1rem;
+  font-size: 1rem;
   background-color: transparent;
-  border: 1px solid royalblue;
+  color: royalblue;
+  border-color: royalblue;
+  border-width: 1px;
+  border-radius: 40px;
 }
