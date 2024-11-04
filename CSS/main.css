@@ -21,64 +21,66 @@ img {
 
 /* || GENERAL STYLES */
 .form-container {
-  padding: 0.5rem 0rem;
-  height: 98vh;
   background-color: aliceblue;
   display: grid;
-  grid-template-rows: auto 1fr auto 1fr 40px;
   grid-template-columns: 95%;
+  grid-template-rows: auto 1fr auto 1fr 40px;
+  height: 98vh;
   justify-content: center;
   justify-items: stretch;
+  padding: 0.5rem 0rem;
 }
 select {
-  border: none;
-  justify-self: center;
   background-color: transparent;
-  font-size: 0.9rem;
+  border: none;
   color: var(--TEXT-COLOR);
+  font-size: 0.9rem;
+  justify-self: center;
 }
 figure {
   display: grid;
-  justify-items: center;
-  align-items: center;
+  place-items: center;
 }
 .input-container {
   display: grid;
-  grid-template-rows: auto auto auto;
   grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
   row-gap: 12px;
 }
 input {
-  padding: 1.3rem;
-  font-size: 1rem;
-  border: 0.1px solid gray;
   border-radius: 10px;
+  border: 0.1px solid gray;
+  font-size: 1rem;
   font-weight: 450;
+  padding: 1.3rem;
 }
 .login-btn {
-  padding: 0.8rem;
-  font-size: 1rem;
   background-color: var(--BUTTON-COLOR);
-  color: white;
-  border: none;
   border-radius: 40px;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0.8rem;
 }
 .forgot-password {
+  color: var(--TEXT-COLOR);
   justify-self: center;
   text-decoration: none;
-  color: var(--TEXT-COLOR);
 }
 .create-new {
-  display: grid;
   align-items: end;
+  display: grid;
   justify-items: stretch;
 }
 .new-account-btn {
-  padding: 0.8rem;
-  font-size: 1rem;
   background-color: transparent;
-  color: var(--BUTTON-COLOR);
   border-color: var(--BUTTON-COLOR);
-  border-width: 1px;
   border-radius: 40px;
+  border-width: 1px;
+  color: var(--BUTTON-COLOR);
+  font-size: 1rem;
+  padding: 0.8rem;
+}
+@media screen and (min-width:473px){
+
 }
